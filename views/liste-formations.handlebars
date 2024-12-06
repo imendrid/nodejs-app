@@ -1,0 +1,11 @@
+<h1>Liste des formations suggérées</h1>
+<ul>
+  {{#each formations}}
+  <li>
+    <h2>{{this.titre}}</h2>
+    <p>{{this.description}}</p>
+    <p>Proposé par : {{this.etudiant}}</p>
+    <p>Date : {{this.date_suggestion}}</p>
+  </li>
+  {{/each}}
+</ul>

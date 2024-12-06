@@ -1,0 +1,51 @@
+<h2 class="text-center mb-5">Suggérer une Formation</h2>
+
+<!-- Afficher le message de succès si la formation a été ajoutée -->
+{{#if successMessage}}
+  <div class="alert alert-success text-center" role="alert">
+    {{successMessage}}
+  </div>
+{{/if}}
+
+<!-- Formulaire de suggestion de formation avec une meilleure présentation -->
+<form action="/ajouter-formation" method="POST" class="mx-auto" style="max-width: 600px; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); background-color: #fff;">
+  
+  <div class="form-group">
+    <label for="titre" class="font-weight-bold">Titre de la formation :</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fas fa-book"></i></span>
+      </div>
+      <input type="text" class="form-control" id="titre" name="titre" placeholder="Entrez le titre de la formation" required>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="description" class="font-weight-bold">Description :</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+      </div>
+      <textarea class="form-control" id="description" name="description" placeholder="Entrez une description détaillée de la formation (min. 100 caractères)" rows="5" required></textarea>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label for="etudiant" class="font-weight-bold">Nom de l'étudiant :</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fas fa-user"></i></span>
+      </div>
+      <input type="text" class="form-control" id="etudiant" name="etudiant" placeholder="Entrez votre nom" required>
+    </div>
+  </div>
+  
+  <div class="form-group text-center">
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Ajouter la Formation</button>
+  </div>
+</form>
+
+<!-- Lien vers la liste des formations -->
+<div class="text-center mt-4">
+  <a href="/liste-formations" class="btn btn-outline-secondary btn-lg">Voir toutes les formations suggérées</a>
+</div>

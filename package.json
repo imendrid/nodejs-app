@@ -1,0 +1,19 @@
+{
+  "name": "formations-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.1",
+    "express-handlebars": "^8.0.1",
+    "mysql": "^2.18.1"
+  }
+}

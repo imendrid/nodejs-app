@@ -1,0 +1,28 @@
+<h1 class="text-center mb-4">Rechercher une Formation</h1>
+
+<!-- Formulaire de recherche -->
+<form action="/recherche-formation" method="GET" class="d-flex justify-content-center mb-4">
+  <input 
+    type="text" 
+    name="query" 
+    class="form-control w-50 mr-2" 
+    placeholder="Recherchez par titre ou nom de l'étudiant" 
+    required>
+  <button type="submit" class="btn btn-primary">Chercher</button>
+</form>
+
+<!-- Résultats de recherche -->
+{{#if formations.length}}
+  <ul class="list-group">
+    {{#each formations}}
+      <li class="list-group-item mb-3">
+        <h2 class="h5">{{this.titre}}</h2>
+        <p><strong>Description :</strong> {{this.description}}</p>
+        <p><strong>Proposé par :</strong> {{this.etudiant}}</p>
+        <p><strong>Date :</strong> {{this.date_suggestion}}</p>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p class="text-center text-muted">Aucune formation trouvée pour votre recherche.</p>
+{{/if}}

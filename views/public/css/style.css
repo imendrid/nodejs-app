@@ -1,0 +1,134 @@
+/* Style global */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Conteneur principal */
+  form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Titre de la page */
+  h2.text-center {
+    color: #34495e;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Champs de saisie */
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    border: 2px solid #ced4da;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #84fab0;
+    box-shadow: 0 0 10px rgba(132, 250, 176, 0.7);
+  }
+  
+  /* Étiquettes */
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  /* Boutons */
+  button {
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(120deg, #8fd3f4, #84fab0);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-outline-secondary {
+    border: 2px solid #84fab0;
+    color: #84fab0;
+    background-color: transparent;
+    font-size: 18px;
+  }
+  
+  .btn-outline-secondary:hover {
+    background: #84fab0;
+    color: #fff;
+  }
+  
+  /* Message de succès */
+  .alert-success {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Marges et alignements */
+  .mt-4 {
+    margin-top: 2rem;
+  }
+  
+  .mb-5 {
+    margin-bottom: 4rem;
+  }
+  
+  .text-center a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Ajouter une animation au focus */
+  input:focus,
+  textarea:focus {
+    animation: bounce 0.3s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+  
